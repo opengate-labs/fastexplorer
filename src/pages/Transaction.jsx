@@ -43,7 +43,13 @@ export default function Transaction() {
         <Heading mb={4} fontSize='md'>
           Transaction {hash}
         </Heading>
-        <Box w='full' p={4} minH='400px' background='white' borderRadius={12}>
+        <Box
+          w='full'
+          p={4}
+          minH='400px'
+          background='counterBGColor'
+          borderRadius={12}
+        >
           {loading && (
             <Stack spacing={6}>
               <Skeleton height='10px' />
@@ -68,7 +74,7 @@ export default function Transaction() {
                   (key) => key !== '__typename' && !!response?.transaction[key]
                 )
                 .map((key) => (
-                  <Text key={key}>
+                  <Text key={key} color='textColor'>
                     {key}: {response?.transaction[key]}{' '}
                     <IconButton
                       background='transparent'

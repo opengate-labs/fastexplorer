@@ -12,7 +12,17 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'gray.100',
+        bg: { default: '#BBC1C3', _dark: '#3D3E54' },
+      },
+    },
+  },
+  semanticTokens: {
+    colors: {
+      bgColor: { default: '#F2F4F5', _dark: '#181B24' },
+      textColor: { default: '#1F2933', _dark: '#F9FAFB' },
+      counterBGColor: {
+        default: '#EBEEF0',
+        _dark: '#272B3C',
       },
     },
   },

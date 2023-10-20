@@ -44,6 +44,7 @@ export default function Search({ ...props }) {
           pl={12}
           w='full'
           borderRadius={16}
+          color='textColor'
           placeholder='Search by address, token symbol, name, transaction hash, or block number'
           {...register('search')}
         />
