@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { FaSearchDollar } from 'react-icons/fa';
+import { FaSearch, FaSearchDollar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 export default function Search({ ...props }) {
@@ -29,8 +29,8 @@ export default function Search({ ...props }) {
     >
       <InputGroup>
         <InputLeftElement>
-          <Icon boxSize='35px' color='teal.400' mt='33px' ml='18px'>
-            <FaSearchDollar />
+          <Icon boxSize='30px' color='teal.400' mt='33px' ml='18px'>
+            <FaSearch />
           </Icon>
         </InputLeftElement>
         <Input

@@ -24,3 +24,22 @@ export const getTransactionByHash = (hash) => gql`
     }
 }
 `;
+
+export const getBlockByNumber = (number) => gql`
+{
+    block(number:${number}) {
+      consensus,
+      difficulty,
+      gasLimit,
+      gasUsed,
+      hash,
+      minerHash,
+      nonce,
+      number,
+      parentHash,
+      size,
+      timestamp,
+      totalDifficulty,
+    }
+  }
+  `;

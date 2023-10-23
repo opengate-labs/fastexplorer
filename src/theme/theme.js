@@ -21,7 +21,7 @@ const theme = extendTheme({
       bgColor: { default: '#F2F4F5', _dark: '#181B24' },
       textColor: { default: '#1F2933', _dark: '#F9FAFB' },
       counterBGColor: {
-        default: '#EBEEF0',
+        default: '#FEFEFE',
         _dark: '#272B3C',
       },
     },
