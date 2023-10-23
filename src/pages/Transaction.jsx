@@ -56,6 +56,7 @@ export default function Transaction() {
           p={4}
           minH='400px'
           background='counterBGColor'
+          overflowX='hidden'
           borderRadius={12}
           boxShadow='0 0 6px 0 rgba(202,199,226,.5)'
         >
