@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <Flex
       alignItems='center'
-      width='100vw'
+      maxW='100vw'
       justifyContent='space-between'
       px={12}
       py={4}
